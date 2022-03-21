@@ -1,0 +1,19 @@
+<div class="update">
+    <h1>Update Employees</h1>
+    <form [formGroup]="updateForm" (ngSubmit)="updateData()">
+        <input type="text" formControlName="name" placeholder="{{update.emp_name}}">
+
+        <input type="text" formControlName="dob" placeholder="{{update.emp_dob}}">
+        
+        <input type="text" formControlName="emp_id" placeholder="{{update.emp_id}}">
+        
+        <input type="text" formControlName="salary" placeholder="{{update.emp_salary}}">
+
+        <label for="profile_picture">Profile_picture : </label>
+        <input type="file" class="file" formControlName="profile_picture" (change)="uploudFile($event)">
+
+        <div mat-dialog-actions>
+            <button type="submit" class="btn btn-primary" mat-button mat-dialog-close>Update</button>
+        </div>
+    </form>
+</div>

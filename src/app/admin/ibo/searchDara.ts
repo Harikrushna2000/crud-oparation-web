@@ -1,0 +1,35 @@
+export interface searchData {
+  user_id:any;
+  branch_id:any;
+  ibo_code:any;
+  name_of_city:any;
+  branch_code:any;
+  first_name:any;
+  middle_name:any;
+  last_nameany:any;
+  fathers_name:any;
+  dob:any;
+  nationality:any;
+  residential_address:any;
+  city:any;
+  state:any;
+  pin_code:any;
+  mobile:any;
+  email:any;
+  password:any;
+  id_proof_name:any;
+  id_proof_no:any;
+  profile:any;
+  name_of_bank:any;
+  account_no:any;
+  ifsc_code:any;
+  profile_picture:any;
+  aadhar_front:any;
+  aadhar_back:any;
+  other_proof:any;
+  register_at:any;
+  updated_at:any;
+  status:any;
+  branch:any;
+  branch_short_name:any;
+}

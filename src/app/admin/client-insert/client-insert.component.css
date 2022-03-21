@@ -1,0 +1,17 @@
+.client-ins{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 5px;
+}
+.form{
+    width: 290px;
+}
+input{
+    width: 200px;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 3px;
+ }
+ button{
+     margin: 1px 250px;
+ }

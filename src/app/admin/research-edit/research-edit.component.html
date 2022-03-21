@@ -1,0 +1,23 @@
+
+<h2 style="text-align: center;">~ Edit Research Data ~</h2>
+<form [formGroup]="updatForm" (ngSubmit)="updetData()">
+    
+    <label for="send_to" >Research_id : </label>
+    <input type="text" formControlName="research_id" placeholder="{{formData.research_id}}">
+
+    <label for="send_to" >Research_content : </label>
+    <input type="text" formControlName="research_content" placeholder="{{formData.research_content}}">
+
+    <label for="send_to" >Send_to : </label>
+    <select name="send_to" formControlName="send_to" id="send_to">
+      <option value="all">all</option>
+      <option value="ibo">ibo</option>
+      <option value="client">client</option>
+      <option value="branch">branch</option>
+      <option value="students">students</option>
+    </select>
+
+    <div mat-dialog-actions>
+        <button type="submit" mat-button mat-dialog-close class="btn btn-primary">Update Data</button>
+    </div>
+</form>

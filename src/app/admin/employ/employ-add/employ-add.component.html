@@ -1,0 +1,24 @@
+<div class="insertData">
+    <h1>Insert Employees Form</h1>
+    <form [formGroup]="insertForm" (ngSubmit)="insertData()">
+
+        <input type="text" formControlName="branch_id" placeholder="Branch_id">
+
+        <input type="text" formControlName="name" placeholder="Name">
+
+        <input type="text" formControlName="email" placeholder="Email">
+
+        <input type="text" formControlName="phone" placeholder="Phone">
+
+        <input type="date" formControlName="dob" placeholder="DOB">
+
+        <input type="text" formControlName="salary" placeholder="Salary">
+
+        <label for="profile_picture">Profile_picture : </label>
+        <input type="file" class="file" formControlName="profile_picture" (change)="changeFile($event)">
+
+        <div mat-dialog-actions>
+        <button type="submit" mat-button mat-dialog-close class="btn btn-primary">Insert Data</button>
+        </div>
+    </form>
+</div>

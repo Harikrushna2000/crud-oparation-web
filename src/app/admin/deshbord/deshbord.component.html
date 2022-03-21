@@ -1,0 +1,310 @@
+<div class="body">
+  <div class="body-1">
+    <div class="row">
+      <div class="col">
+        <div class="card pull-up">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6 class="text-muted">Branch :</h6>
+                  <div
+                    *ngIf="
+                      dashData.branch == null;
+                      then thenBlock;
+                      else elseBlock
+                    "
+                  ></div>
+                  <ng-template #thenBlock><h3>0</h3></ng-template>
+                  <ng-template #elseBlock
+                    ><h3>{{ dashData.branch }}</h3></ng-template
+                  >
+                </div>
+                <div class="align-self-center">
+                  <i class="fa fa-users"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card pull-up">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6 class="text-muted">IBO :</h6>
+                  <div
+                    *ngIf="
+                      dashData.ibo == null;
+                      then thenBlock1;
+                      else elseBlock1
+                    "
+                  ></div>
+                  <ng-template #thenBlock1><h3>0</h3></ng-template>
+                  <ng-template #elseBlock1
+                    ><h3>{{ dashData.ibo }}</h3></ng-template
+                  >
+                </div>
+                <div class="align-self-center">
+                  <i
+                    class="fa fa-university"
+                    style="color: #ff4961 !important"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card pull-up">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6 class="text-muted">Clients :</h6>
+                  <div
+                    *ngIf="
+                      dashData.clients == null;
+                      then thenBlock2;
+                      else elseBlock2
+                    "
+                  ></div>
+                  <ng-template #thenBlock2><h3>0</h3></ng-template>
+                  <ng-template #elseBlock2
+                    ><h3>{{ dashData.clients }}</h3></ng-template
+                  >
+                </div>
+                <div class="align-self-center">
+                  <i class="fa fa-users"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card pull-up">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6 class="text-muted">SSP :</h6>
+                  <div
+                    *ngIf="
+                      dashData.ssp == null;
+                      then thenBlock3;
+                      else elseBlock3
+                    "
+                  ></div>
+                  <ng-template #thenBlock3><h3>0</h3></ng-template>
+                  <ng-template #elseBlock3
+                    ><h3>{{ dashData.ssp }}</h3></ng-template
+                  >
+                </div>
+                <div class="align-self-center">
+                  <i
+                    class="fa fa-university"
+                    style="color: #ff4961 !important"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card pull-up">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6 class="text-muted">Power_one :</h6>
+                  <div
+                    *ngIf="
+                      dashData.power_one == null;
+                      then thenBlock4;
+                      else elseBlock4
+                    "
+                  ></div>
+                  <ng-template #thenBlock4><h3>0</h3></ng-template>
+                  <ng-template #elseBlock4
+                    ><h3>{{ dashData.power_one }}</h3></ng-template
+                  >
+                </div>
+                <div class="align-self-center">
+                  <i class="fa fa-users"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card pull-up">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6 class="text-muted">Free_video :</h6>
+                  <div
+                    *ngIf="
+                      dashData.free_video == null;
+                      then thenBlock5;
+                      else elseBlock5
+                    "
+                  ></div>
+                  <ng-template #thenBlock5><h3>0</h3></ng-template>
+                  <ng-template #elseBlock5
+                    ><h3>{{ dashData.free_video }}</h3></ng-template
+                  >
+                </div>
+                <div class="align-self-center">
+                  <i
+                    class="fa fa-university"
+                    style="color: #ff4961 !important"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card pull-up">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6 class="text-muted">Paid_video :</h6>
+                  <div
+                    *ngIf="
+                      dashData.paid_video == null;
+                      then thenBlock6;
+                      else elseBlock6
+                    "
+                  ></div>
+                  <ng-template #thenBlock6><h3>0</h3></ng-template>
+                  <ng-template #elseBlock6
+                    ><h3>{{ dashData.paid_video }}</h3></ng-template
+                  >
+                </div>
+                <div class="align-self-center">
+                  <i class="fa fa-users"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card pull-up">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6 class="text-muted">Travel :</h6>
+                  <div
+                    *ngIf="
+                      dashData.travel == null;
+                      then thenBlock7;
+                      else elseBlock7
+                    "
+                  ></div>
+                  <ng-template #thenBlock7><h3>0</h3></ng-template>
+                  <ng-template #elseBlock7
+                    ><h3>{{ dashData.travel }}</h3></ng-template
+                  >
+                </div>
+                <div class="align-self-center">
+                  <i
+                    class="fa fa-university"
+                    style="color: #ff4961 !important"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card pull-up">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6 class="text-muted">Real_estate :</h6>
+                  <div
+                    *ngIf="
+                      dashData.real_estate == null;
+                      then thenBlock8;
+                      else elseBlock8
+                    "
+                  ></div>
+                  <ng-template #thenBlock8><h3>0</h3></ng-template>
+                  <ng-template #elseBlock8
+                    ><h3>{{ dashData.real_estate }}</h3></ng-template
+                  >
+                </div>
+                <div class="align-self-center">
+                  <i class="fa fa-users"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-5">
+      <div class="card chart-1">
+        <div class="card-header">
+          <h4 class="card-title mb-0">Revenue</h4>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="reload"><i class="fa fa-repeat"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show">
+          <div class="card-body pt-0">
+            <div class="row mb-1 chart" style="width: 100%">
+              <div class="col-6">
+                <h4 style="color: gray">Current week</h4>
+                <h2 class="danger" style="color: rgb(75, 192, 192)">$82,124</h2>
+              </div>
+              <div class="col-6">
+                <h4 style="color: gray">Previous week</h4>
+                <h2 class="text-muted">$52,502</h2>
+              </div>
+            </div>
+            <div class="chartjs" style="width: 100%">
+              <canvas id="myLineChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="barChart card" style="width: 100%">
+        <div class="card-header">
+        <h2>Bar Chart:</h2>
+        </div>
+        <div class="card-body">
+        <canvas id="myBarChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

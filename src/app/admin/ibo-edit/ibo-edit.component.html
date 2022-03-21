@@ -1,0 +1,60 @@
+
+<form [formGroup] = "iboUpdateForm" (ngSubmit)="iboUpdate()">
+
+    <h1><i>~: Edit Ibo Data :~</i></h1>
+
+    <input type="text" formControlName="branch_id" name="branch_id" placeholder="{{editData.branch_id}}">
+
+    <input type="text" formControlName="user_id" name="user_id" placeholder="{{editData.user_id}}">
+
+    <input type="text" formControlName="name_of_city" name="name_of_city" placeholder="{{editData.name_of_city}}">
+    <br>
+    <input type="text" formControlName="first_name" name="first_name" placeholder="{{editData.first_name}}">
+  
+    <input type="text" formControlName="middle_name" name="middle_name" placeholder="{{editData.middle_name}}">
+    
+    <input type="text" formControlName="last_name" name="last_name" placeholder="{{editData.last_name}}">
+    <br>
+    <input type="text" formControlName="fathers_name" name="fathers_name" placeholder="{{editData.fathers_name}}">
+
+    <input type="date" formControlName="dob" name="dob" placeholder="{{editData.dob}}">
+
+    <input type="text" formControlName="nationality" name="nationality" placeholder="{{editData.nationality}}">
+    <br>
+    <input type="text" formControlName="residential_address" name="residential_address" placeholder="{{editData.residential_address}}">
+   
+    <input type="text" formControlName="city" name="city" placeholder="{{editData.city}}">
+    
+    <input type="text" formControlName="state" name="state" placeholder="{{editData.state}}">
+    <br>
+    <input type="text" formControlName="pin_code" name="pin_code" placeholder="{{editData.pin_code}}">
+ 
+    <input type="text" formControlName="id_proof_name" name="id_proof_name" placeholder="{{editData.id_proof_name}}">
+    
+    <input type="text" formControlName="id_proof_no" name="id_proof_no" placeholder="{{editData.id_proof_no}}">
+    <br>
+    <input type="text" formControlName="profile" name="profile" placeholder="{{editData.profile}}">
+    
+    <input type="text" formControlName="name_of_bank" name="name_of_bank" placeholder="{{editData.name_of_bank}}">
+   
+    <input type="text" formControlName="account_no" name="account_no" placeholder="{{editData.account_no}}">
+    <br>
+    <input type="text" formControlName="ifsc_code" name="ifsc_code" placeholder="{{editData.ifsc_code}}">
+ 
+    <!-- <input type="text" formControlName="user_type" name="user_type" placeholder="{{editData.user_type}}">  -->
+    
+    <br>
+    <label for="profile_picture">profile_picture :</label>
+    <input type="file" formControlName="profile_picture" class="file-upload" (change)="onFileChange1($event)">   
+    <label for="aadhar_front">aadhar_front :</label>
+    <input type="file" formControlName="aadhar_front" class="file-upload" (change)="onFileChange2($event)">    <br>
+    <label for="aadhar_back">aadhar_back :</label>
+    <input type="file" formControlName="aadhar_back" class="file-upload" (change)="onFileChange3($event)">   
+    <label for="other_proof">other_proof :</label>
+    <input type="file" formControlName="other_proof" class="file-upload" (change)="onFileChange4($event)">    <br>   
+    
+    <div mat-dialog-actions>
+      <button type="submit" mat-button mat-dialog-close class="btn btn-primary">Submit</button>
+      </div>
+      
+  </form>

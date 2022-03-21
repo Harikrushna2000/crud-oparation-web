@@ -1,0 +1,17 @@
+.body{
+    display: flex;
+    width: 100%;
+    padding: 7px;
+    margin: 0;
+    box-shadow:  4px 0 0 0 rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
+}
+.body p{
+    color: gray;
+    margin-bottom: 0;
+}
+.left a{
+    text-decoration: none;
+}
+.right{
+    text-align: right;
+}

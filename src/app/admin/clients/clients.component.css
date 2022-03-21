@@ -1,0 +1,41 @@
+
+table{
+   width: 100%;
+}
+.body{
+   margin: 80px;
+}
+.mat-header-cell{
+   padding: 5px 10px;
+}
+.mat-cell {
+   padding: 5px ;
+ }
+ .mat-cell a{
+   cursor: pointer;
+   color: blue;
+ }
+ .mat-form-field{
+    margin-left: 100px;
+ }
+ form{
+    margin-bottom: 30px;
+ }
+ input{
+   width: 300px;
+   margin: 10px;
+   padding: 5px 15px;
+   border-radius: 3px;
+}
+button{
+   border: none;
+   float: right;
+   border-radius: 3px;
+   padding: 5px 10px;
+   background-color:gray;
+   color: white;
+}
+.form-btn{
+   margin-right: 360px;
+   margin-top: 15px;
+}

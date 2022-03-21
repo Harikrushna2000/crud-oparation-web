@@ -1,0 +1,77 @@
+
+<mat-toolbar>
+  
+<!-- Nevbar start -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="toggle d-flex">
+    <a class="navbar-brand" href="#">
+      <div class="image">
+        <a class="navbar-brand d-flex" href="#">
+          <img
+          src="assets/logo.jpg"
+          width="50"
+          height="50"
+          class="d-inline-block align-top"
+          alt=""
+          />
+          <p>Modern</p>
+        </a>
+      </div>
+    </a>
+    <a style="margin-top: 20px; margin-left: 20px;" (click)="drawer.toggle()">
+      <i class="fa fa-navicon"></i>
+    </a>
+  </div>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#"
+      id="navbarDropdown"
+      role="button"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Dropdown
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#"
+        ><i class="fa fa-user-o"></i> Edit Profile</a
+      >
+      <a class="dropdown-item" href="#"
+        ><i class="fa fa-envelope-o"></i> My Inbox</a
+      >
+      <a class="dropdown-item" href="#"
+        ><i class="fa fa-check-square-o"></i> Task</a
+      >
+      <a class="dropdown-item" href="#"
+        ><i class="fa fa-comment-o"></i> Chats</a
+      >
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item logout" (click)="logout()"
+        ><i class="fa fa-power-off"></i> Logout</a
+      >
+    </div>
+  </li>
+</nav>
+<!-- NavBar End -->
+</mat-toolbar>
+<mat-drawer-container>
+  <mat-drawer #drawer id="sidBar" mode="side" opened>
+    <ul>
+        <li><a routerLink="deshbord" routerLinkActive="active">Deshbord</a></li>
+        <li><a routerLink="ibo" routerLinkActive="active">IBO</a></li>
+        <li><a routerLink="clients" routerLinkActive="active">Clients</a></li>
+        <li><a routerLink="product" routerLinkActive="active">Products</a></li>
+        <li><a routerLink="research" routerLinkActive="active">Research</a></li>
+        <li><a routerLink="employ" routerLinkActive="active">Employ</a></li>
+    </ul>
+  </mat-drawer>
+  <mat-drawer-content>
+    <!-- <button class="btn btn-primary" type="button" mat-button (click)="drawer.toggle()">
+      <i class="fa fa-navicon"></i>
+    </button> -->
+    <router-outlet></router-outlet>
+    
+  </mat-drawer-content>
+</mat-drawer-container>

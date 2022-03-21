@@ -1,0 +1,30 @@
+
+h1{
+    text-align: center;
+}
+form{
+    background-color: aliceblue;
+    border-radius: 3px;
+}
+input{
+    padding: 5px 7px;
+    margin: 5px 10px;
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    /* background-color: antiquewhite; */
+}
+button{
+    border: none;
+    color: white;
+    border-radius: 3px;
+    margin: 10px 440px;
+    /* padding: 10px 20px; */
+}
+button:hover{
+    background-color: gray;
+    color: black;
+}
+label{
+    margin-left: 10px;
+}

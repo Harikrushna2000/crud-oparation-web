@@ -1,0 +1,33 @@
+<div class="client-ins">
+    <h1>Clients Insert Form :</h1>
+    <form [formGroup] = "clientIns" (ngSubmit)="clientForm()">
+
+        <input type="text" class="form" formControlName="name" placeholder="Enter Name">
+
+        <input type="email" class="form" formControlName="email" placeholder="Enter Email">
+        <br>
+        <input type="text" class="form" formControlName="phone_number" placeholder="Enter Phone_number">
+
+        <input type="text" class="form" formControlName="aadhar_number" placeholder="Enter Aadhar_number">
+        <br>
+        <input type="date" class="form" formControlName="dob" placeholder="Enter DOD"><br>
+
+        <label for="aadher_front">Aadhar_front :</label>
+        <input type="file" class="file" formControlName="aadhar_front" (change)="onFileChange1($event)">
+
+        <label for="aadhar_back">Aadhar_back :</label>
+        <input type="file" class="file" formControlName="aadhar_back" (change)="onFileChange2($event)">
+        <br>
+        <label for="other_proof">Aadhar_back :</label>
+        <input type="file" class="file" formControlName="other_proof" (change)="onFileChange3($event)">
+
+        <label for="profile_pic">profile_pic :</label>
+        <input type="file" class="file" formControlName="profile_pic" (change)="onFileChange4($event)">
+        <br>
+
+        <div mat-dialog-actions>
+            <button type="submit" mat-button mat-dialog-close class="btn btn-primary">Submit</button>
+        </div>
+
+    </form>
+</div>

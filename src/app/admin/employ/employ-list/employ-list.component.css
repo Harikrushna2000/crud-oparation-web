@@ -1,0 +1,32 @@
+.employ_data{
+    margin-top: 60px;
+}
+table{    
+    margin: 10px 140px 150px 140px;
+}
+.mat-header-cell{
+    padding: 10px;
+}
+.mat-cell{
+    padding: 10px;
+}
+form{
+    text-align: center;
+}
+input{
+    border-radius: 3px 0 0 3px;
+    padding: 3px;
+}
+.search{
+    border-radius: 0 3px 3px 0;
+    padding: 3px;
+}
+.btn{
+    padding: 3px;
+    color: white;
+    margin-left: 180px;
+}
+.btn:hover{
+    background-color: gray;
+    color: white;
+}

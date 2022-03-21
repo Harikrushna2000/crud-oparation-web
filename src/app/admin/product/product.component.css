@@ -1,0 +1,22 @@
+/* form {
+  margin: 100px;
+} */
+.card{
+    width: 350px;
+    margin: 100px 300px;
+    padding: 30px 70px;
+    background-color:aliceblue;
+}
+.btn{
+    margin: 10px 40px;
+}
+
+table{
+  margin: 100px;
+}
+.mat-header-cell{
+  padding: 10px;
+}
+.mat-cell{
+  padding: 5px 10px;
+}

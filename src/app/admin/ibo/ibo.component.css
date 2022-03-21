@@ -1,0 +1,43 @@
+
+.body{
+   margin: 80px;
+   /* position: relative; */
+}
+table{
+   width: 100%;
+   margin-bottom: 200px;
+}
+.mat-cell button{
+   background-color: white;
+}
+.mat-cell a{
+   cursor: pointer;
+   color: blue;
+}
+.fullscreen-dialog {
+   max-width: 100% !important;
+ }
+ button{
+    border: none;
+    float: right;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background-color:gray;
+    color: white;
+ }
+ input{
+    width: 300px;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 3px;
+ }
+ .btn{
+    margin-right: 360px;
+    margin-top: 15px;
+ }
+ th.mat-sort-header-sorted {
+   color: black;
+ }
+ .mat-header-cell{
+    text-align: center;
+ }

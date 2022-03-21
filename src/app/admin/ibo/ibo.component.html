@@ -1,0 +1,68 @@
+<div class="body">
+  
+  <form [formGroup]="searchform" (ngSubmit)="searchData()">
+    <h3>Search Data:</h3>
+      <input type="text" formControlName="branch_id" name="branch_id" placeholder="branch_id">
+   
+      <input type="text" formControlName="ibo_code" name="ibo_code" placeholder="Ibo_code">
+     
+      <input type="text" formControlName="first_name" name="first_name" placeholder="Name">
+        
+      <input type="text" formControlName="from_date" name="from_date" placeholder="from_date">
+   
+      <input type="text" formControlName="to_date" name="to_date" placeholder="to_date">
+
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+  <br><br>
+  <button (click)="insertData()">Insert-Data</button>
+  <table mat-table [dataSource]="dataSource" style="text-align: center;" class="mat-elevation-z8">
+    <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Ibo_code Column -->
+    <ng-container matColumnDef="ibo_code">
+      <th mat-header-cell *matHeaderCellDef>Ibo_code</th>
+      <td mat-cell *matCellDef="let element">{{ element.ibo_code }}</td>
+    </ng-container>
+
+    <!-- Branch_code Column -->
+    <ng-container matColumnDef="branch_code">
+      <th mat-header-cell *matHeaderCellDef>Branch_code</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.branch_code }}
+      </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.first_name }} {{ element.last_name }}
+      </td>
+    </ng-container>
+
+    <!-- Register_at Column -->
+    <ng-container matColumnDef="register_at">
+      <th mat-header-cell *matHeaderCellDef>Register_at</th>
+      <td mat-cell *matCellDef="let element">{{ element.register_at }}</td>
+    </ng-container>
+
+    <!-- Edit buttn Column -->
+    <ng-container matColumnDef="edit">
+      <th mat-header-cell *matHeaderCellDef>Edit_Data</th>
+      <td mat-cell *matCellDef="let element"><a (click)="update(element)"><i class="fa fa-edit"></i></a></td>
+    </ng-container>
+
+    <!-- Show Button Column -->
+    <ng-container matColumnDef="show">
+      <th mat-header-cell *matHeaderCellDef>Show_Data</th>
+      <td mat-cell *matCellDef="let element"><a (click)="showData('show',element)"><i class="fa fa-eye"></i></a></td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+  </table>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,102 @@
+/* 
+.navbar-brand{
+  display: flex;
+  margin: 0 0 5px 0 ;
+}
+.navbar-brand p{
+  display: inline-block;
+  margin: 15px 10px 0 0;
+  font-size: 25px;
+}
+.sidenav {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+.main {
+  margin-left: 200px; 
+  font-size: 28px;
+  padding: 0px 10px;
+}
+.active {
+ background-color: gray;
+} */
+
+
+mat-drawer{
+  background-color: black;
+  color: white;
+  width: 200px;
+  margin-top: 70px;
+  padding: 10px;
+  font-size: 22px;
+  position: fixed;
+}
+app-header{
+  width: 100%;
+}
+#sidBar ul{
+  list-style: none;
+  padding-left: 0;
+}
+#sidBar ul li{
+  margin: 20px 0;
+  width: 170px;
+  padding-left: 10px;
+}
+#sidBar ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+.active{
+  background-color: gray;
+}
+
+
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 10;
+  padding-top: 0;
+  right: 0;
+  top: 0;
+}
+.image a p{
+  font-size: 25px;
+  padding-top: 10px;
+  padding-left: 5px;
+  font-weight: 700;
+}
+.dropdown{
+  list-style: none;
+}
+.dropdown a{
+  color: white;
+}
+.logout{
+  cursor: pointer;
+}
+.dropdown-menu a{
+  color: black;
+}
+.toggle{
+  color: white;
+}

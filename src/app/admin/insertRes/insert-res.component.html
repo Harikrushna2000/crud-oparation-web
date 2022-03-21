@@ -1,0 +1,23 @@
+
+<h1>Insert Research Data </h1>
+<form [formGroup]="researchForm" (ngSubmit)="research()">
+    <label for="research_content">Research_content : </label>
+    <input type="text" formControlName="research_content" placeholder="Research_content">
+
+    <br><br>
+
+    <label for="send_to">Send_to : </label>
+    <select name="send_to" formControlName="send_to" id="send_to">
+      <option value="all">all</option>
+      <option value="ibo">ibo</option>
+      <option value="client">client</option>
+      <option value="branch">branch</option>
+      <option value="students">students</option>
+    </select>
+
+    <br><br>
+
+    <div mat-dialog-actions>
+    <button type="submit" mat-button mat-dialog-close class="btn btn-primary">Submit</button>
+    </div>
+</form>

@@ -1,0 +1,55 @@
+<div class="employ_data">
+    <form [formGroup]="searchForm" (ngSubmit)="search()">
+        <input type="text" formControlName="emp_id" placeholder="Search emp_id..">
+        <button class="search" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <button class="btn btn-primary" (click)="insert()">Insert Data</button>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="emp_id">
+            <th mat-header-cell *matHeaderCellDef>Emp_id</th>
+            <td mat-cell *matCellDef="let element">{{element.emp_id}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="branch_id">
+            <th mat-header-cell *matHeaderCellDef>Branch_id</th>
+            <td mat-cell *matCellDef="let element">{{element.branch_id}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="emp_name">
+            <th mat-header-cell *matHeaderCellDef>Emp_name</th>
+            <td mat-cell *matCellDef="let element">{{element.emp_name}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="emp_email">
+            <th mat-header-cell *matHeaderCellDef>Emp_email</th>
+            <td mat-cell *matCellDef="let element">{{element.emp_email}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="emp_dob">
+            <th mat-header-cell *matHeaderCellDef>Emp_dob</th>
+            <td mat-cell *matCellDef="let element">{{element.emp_dob}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="edit">
+            <th mat-header-cell *matHeaderCellDef>Edit_Data</th>
+            <td mat-cell *matCellDef="let element" style="text-align: center;"><a style="color: rgb(16, 139, 255);cursor: pointer;" (click)="editData(element)"><i class="fa fa-edit"></i></a></td>
+        </ng-container>
+
+        <ng-container matColumnDef="delete">
+            <th mat-header-cell *matHeaderCellDef>Delete_Data</th>
+            <td mat-cell *matCellDef="let element" style="text-align: center;"><a style="color: rgb(16, 139, 255);cursor: pointer;" (click)="deleteData(element.emp_id)"><i class="fa fa-trash-o"></i></a></td>
+        </ng-container>
+
+        <ng-container matColumnDef="show">
+            <th mat-header-cell *matHeaderCellDef>Show_Data</th>
+            <td mat-cell *matCellDef="let element" style="text-align: center;"><a style="color: rgb(16, 139, 255);cursor: pointer;" (click)="showData(element)"><i class="fa fa-eye"></i></a></td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displyColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns:displyColumns"></tr>
+    </table>
+<app-footer></app-footer>
+</div>

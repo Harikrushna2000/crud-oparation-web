@@ -1,0 +1,19 @@
+form{
+    width: 350px;
+}
+input{
+    width: 340px;
+    margin: 2px;
+    border-radius: 3px;
+}
+select{
+    width: 340px;
+    margin: 2px;
+    border-radius: 3px;
+}
+button{
+    margin: 1px 105px;
+}
+label{
+    margin: 10px 0;
+}

@@ -1,0 +1,58 @@
+<form [formGroup] = "iboDataForm" (ngSubmit)="iboInsert()">
+
+    <input type="text" formControlName="name_of_city" name="name_of_city" placeholder="name_of_city">
+    
+    <input type="text" formControlName="first_name" name="first_name" placeholder="first_name">
+  
+    <input type="text" formControlName="middle_name" name="middle_name" placeholder="middle_name">
+    <br>
+    <input type="text" formControlName="last_name" name="last_name" placeholder="last_name">
+    
+    <input type="text" formControlName="fathers_name" name="fathers_name" placeholder="fathers_name">
+
+    <input type="date" formControlName="dob" name="dob" placeholder="dob">
+    <br>
+    <input type="text" formControlName="nationality" name="nationality" placeholder="nationality">
+
+    <input type="text" formControlName="residential_address" name="residential_address" placeholder="residential_address">
+   
+    <input type="text" formControlName="city" name="city" placeholder="city">
+    <br>
+    <input type="text" formControlName="state" name="state" placeholder="state">
+   
+    <input type="text" formControlName="pin_code" name="pin_code" placeholder="pin_code">
+    
+    <input type="text" formControlName="mobile" name="mobile" placeholder="mobile">
+    <br>
+    <input type="email" formControlName="email" name="email" placeholder="email">
+ 
+    <input type="text" formControlName="id_proof_name" name="id_proof_name" placeholder="id_proof_name">
+    
+    <input type="text" formControlName="id_proof_no" name="id_proof_no" placeholder="id_proof_no">
+    <br>
+    <input type="text" formControlName="profile" name="profile" placeholder="profile">
+    
+    <input type="text" formControlName="name_of_bank" name="name_of_bank" placeholder="name_of_bank">
+   
+    <input type="text" formControlName="account_no" name="account_no" placeholder="account_no">
+    <br>
+    <input type="text" formControlName="ifsc_code" name="ifsc_code" placeholder="ifsc_code">
+ 
+    <input type="text" formControlName="user_type" name="user_type" placeholder="user_type"> 
+    
+    <input type="text" formControlName="branch_code" name="branch_code" placeholder="branch_code">
+    <br>
+    <label for="profile_picture">profile_picture :</label>
+    <input type="file" formControlName="profile_picture" class="file-upload" (change)="onFileChange1($event)">   
+    <label for="aadhar_front">aadhar_front :</label>
+    <input type="file" formControlName="aadhar_front" class="file-upload" (change)="onFileChange2($event)">    <br>
+    <label for="aadhar_back">aadhar_back :</label>
+    <input type="file" formControlName="aadhar_back" class="file-upload" (change)="onFileChange3($event)">   
+    <label for="other_proof">other_proof :</label>
+    <input type="file" formControlName="other_proof" class="file-upload" (change)="onFileChange4($event)">    <br>   
+    
+    <div mat-dialog-actions>
+      <button type="submit" mat-button mat-dialog-close class="btn btn-primary">Submit</button>
+      </div>
+      
+  </form>
